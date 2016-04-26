@@ -8,7 +8,7 @@ from subprocess import run
 url    = "https://ws.ovh.com/dedicated/r2/ws.dispatcher/getAvailability2"
 models = ["160sk1"]
 mail   = ""
-sleep  = 5
+sleep  = 10 # quota: 500 queries per 3600s -> 1 every 7.2s
 sleep_after = 300
 
 def notify(model, zone):
