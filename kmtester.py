@@ -29,7 +29,8 @@ def check():
   if found:
     time.sleep(sleep_after)
   else:
-    print("nothing...")
+    print('.', end='')
+    sys.stdout.flush()
 
 while True:
   try:
